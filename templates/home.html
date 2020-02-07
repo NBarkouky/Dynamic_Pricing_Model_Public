@@ -19,13 +19,13 @@
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
  
-        <input type="text" name="Hour" placeholder="Hour" required="required" />
-		<input type="text" name="Milage" placeholder="Milage" required="required" />
-		<input type="text" name="Hour" placeholder="Hour" required="required" />
-		<input type="text" name="Milage" placeholder="Milage" required="required" />
-		<input type="text" name="Hour" placeholder="Hour" required="required" />
-		<input type="text" name="Milage" placeholder="Milage" required="required" />
-	
+        <input type="float" name="Milage" placeholder="Milage" required="required" /> <br>
+		<input type="float" name="Duration" placeholder="Duration" required="required" /><br>
+		<input type="float" name="OrginLatitude" placeholder="OrginLatitude" required="required" /><br>
+		<input type="float" name="OrginLongitude" placeholder="OrginLongitude" required="required" /><br>
+		<input type="float" name="DestinationLatitude" placeholder="DestinationLatitude" required="required" /><br>
+		<input type="float" name="DestinationLongitude" placeholder="DestinationLongitude" required="required" /><br>
+			
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
