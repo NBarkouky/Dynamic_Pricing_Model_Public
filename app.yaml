@@ -1,5 +1,0 @@
-runtime: python37
-
-handlers:
-- url: css
-  static_dir: templates/css
