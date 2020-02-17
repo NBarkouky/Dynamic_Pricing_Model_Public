@@ -1,0 +1,15 @@
+sudo su -
+cd Dynamic_Pricing_Model_Public/
+
+ cd ..
+ rm -R Dynamic_Pricing_Model_Public
+ rm -R envs
+ git clone https://github.com/NBarkouky/Dynamic_Pricing_Model_Public
+ cd ./Dynamic_Pricing_Model_Public
+ unzip finalized_model.zip
+ unzip templates
+ unzip static
+ virtualenv --python python3 \
+    ~/envs/Dynamic_Pricing_Model_Public
+	
+ pip install -r requirements.txt
